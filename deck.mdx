@@ -1,17 +1,38 @@
-# something edgy.
-
----
-
-### Quick Intro
-
----
-
-```jsx
-<CodeSnippet />
-```
-
----
+import { Head, Notes, Appear } from 'mdx-deck'
 import React from 'react'
+
+import sketch from './assets/sketch.png'
+import ruler from './assets/ruler.jpg'
+import handshake from './assets/handshake.jpg'
+
+<Head>
+  <title>Handoff is broken.</title>
+</Head>
+
+# Handoff is broken.
+<Notes>Not just us, I have never seen it be great.</Notes>
+
+
+---
+
+### A quick history lesson
+
+---
+
+### The Dark Ages
+<img style={{ width: '30%' }} src={ruler} />
+
+---
+
+### Photoshop ruled the world
+<Notes>
+  Bloated files, an expensive license, and in a program made to do everything!
+
+  I remember, not long ago It was a big deal to know photoshop as a developer, as that was the only way you could know how to extract the values you needed.
+</Notes>
+
+
+---
 
 <div style={{
   height: '100%',
@@ -20,25 +41,46 @@ import React from 'react'
   alignItems: 'center',
   flexDirection: 'column'
 }}>
-  <img style={{ width: '30%' }} src='https://github.com/verseatile/designdev-deck/blob/master/assets/sketch.png?raw=true' />
+  <img style={{ width: '30%' }} src={sketch} />
 </div>
 
 ---
+
+### Sketchy Future?
+<Notes>
+  Sketch made things better, finally a tool for just UIs! but despite coming out a full 10 years ago no innovation has occured in the last few years.
+
+  Zeplin capatilized on this, so did invision (our current stack)
+
+  Sketch is now the expensive license ( not normally given to devs so we can't participate upstream)
+</Notes>
+
+---
+
 ### Possible Approaches
+
+```jsx
+<CodeSnippet />
+```
 
 ---
 
 React Sketch-app
 
 ---
-### Designers 
-What are you looking for from engineers on your team?
+
+## Discussion Prompts
 
 ---
 
-### Engineers 
-What are you looking for from designers on your team?
+### Designers
+What more are you looking for from engineers on your team?
 
 ---
 
-The end.
+### Engineers
+What more are you looking for from designers on your team?
+
+---
+
+# The end.
