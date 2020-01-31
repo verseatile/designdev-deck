@@ -5,6 +5,12 @@ import sketch from './assets/sketch.png'
 import ruler from './assets/ruler.jpg'
 import handshake from './assets/handshake.jpg'
 
+import collab from './assets/collab.jpg'
+
+import figma from './assets/figma.svg'
+
+
+
 
 
 <Head>
@@ -12,6 +18,8 @@ import handshake from './assets/handshake.jpg'
 </Head>
 
 # Handoff is broken.
+<span style={{fontSize:"0.5em"}}>Not really but it could be better!</span>
+
 <Notes>Not just us, I have never seen it be great.</Notes>
 
 
@@ -50,60 +58,86 @@ import handshake from './assets/handshake.jpg'
 
 ### Sketchy Future?
 <Notes>
+  Sketch used to be the new kid on the block! Many designers around me were hesitant to switch over
+
   Sketch made things better, finally a tool for just UIs! but despite coming out a full 10 years ago no innovation has occured in the last few years.
 
   Zeplin capatilized on this, so did invision (our current stack)
 
   Sketch is now the expensive license ( not normally given to devs so we can't participate upstream)
+
+  They have spoken about adding in some more modern features, like live, and developer handoff in 2020
+
+  Sketch is not bad, but they haven't pushing the ball forward fast enough IMO.
+
 </Notes>
 
 ---
 
 ### Possible Approaches
 
-```jsx
-<CodeSnippet />
-```
+---
+
+<div style={{
+  height: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'row'
+}}>
+  <img style={{ width: '10%', paddingRight: '1em'}} src={figma} />
+  <h1>Figma!</h1>
+</div>
+<Notes>
+  Offers a very similar set of tools to Sketch (with some key diffences that Claire can speak to better)
+
+  Why change now?
+</Notes>
 
 ---
 
-React Sketch-app
+<img style={{ width: '30%' }} src={collab} />
+<Notes>
+  Figma enables participation from all members in the early stages of a project.
 
----
+  Is a slightly differnt mental model, but offers basic prototyping functionality and code sample export (similar to zeplin)
+  figma handoff
 
-<p style={{ textAlign: 'center', padding: '0 80px' }}>Generate styles definitions from csv/excel files and pull into both code and design</p>
+  Robust plugin ecosystem as well
+</Notes>
 
 ---
 
 ### Framer X
+<span style={{fontSize:"1em"}}>Well this is different</span>
+<Notes>
+  Framer X feels un-natural at first look. Code and design in the same tool!?!?!
+
+  Essentially can do everything that Sketch can. Also allows copying and pasting from Sketch (i kid you not, Ctrl-C then Ctrl-V)
+
+  React based, Somewhat high learning curve, but for products with UI kits or shared components that evolve over time
+
+  Components in Framer X are real. Real real.
+
+  Animations and Interactions are powered by a powerful animmation library that ports directly to web for achieving more boundary pushing animations
+
+  Power to create and organize robust design systems by pulling real, tested components in from production react components, or create your own from design or code.
+
+  Compose those components with drag and drop.
+
+  Web Client coming!
+</Notes>
 
 ---
 
 <p style={{ textAlign: 'center', padding: '0 80px' }}>
-  Essentially can do everything that Sketch can. Also allows copying and pasting from Sketch
-<br />
-<br />
-(i kid you not, Ctrl-C then Ctrl-V)
+  But more important than tools, is  <strong>process.</strong>
 </p>
 
 ---
 
-Extensive animation capability
-
----
-
-Power to create and organize robust design systems.
-
----
-
 <p style={{ textAlign: 'center', padding: '0 80px' }}>
-  But more important than tools, is process.
-</p>
-
----
-
-<p style={{ textAlign: 'center', padding: '0 80px' }}>
-  Lets share more often, and make it happen!
+  Lets share more often, and make <strong>collaborative design happen!</strong>
 </p>
 
 ---
@@ -114,14 +148,14 @@ Power to create and organize robust design systems.
 
 ### Designers
 <p style={{ textAlign: 'center', padding: '0 80px' }}>
-What more are you looking for from engineers on your team?
+What more are you looking for from your collaboration with <strong>engineers</strong> on your team?
 </p>
 
 ---
 
 ### Engineers
 <p style={{ textAlign: 'center', padding: '0 80px' }}>
-What more are you looking for from designers on your team?
+What more are you looking for from your collaboration with <strong>designers</strong> on your team?
 </p>
 
 ---
