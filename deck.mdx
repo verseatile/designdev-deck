@@ -1,4 +1,7 @@
 import { Head, Notes, Appear } from 'mdx-deck'
+import { future } from 'mdx-deck/themes'
+import { Invert } from 'mdx-deck'
+
 import React from 'react'
 
 import sketch from './assets/sketch.png'
@@ -9,17 +12,20 @@ import collab from './assets/collab.jpg'
 
 import figma from './assets/figma.svg'
 
-
-
+import challenger from './assets/challenger.jpg'
 
 
 <Head>
   <title>Handoff is broken.</title>
 </Head>
 
-# Handoff is broken.
-<span style={{fontSize:"0.5em"}}>Not really but it could be better!</span>
 
+<Invert>
+  <h1>Handoff is broken.</h1>
+  <Appear>
+    <div><span style='font-size: 0.8em;'>Not really but it could be better!</span></div>
+  </Appear>
+</Invert>
 <Notes>Not just us, I have never seen it be great.</Notes>
 
 
@@ -49,14 +55,16 @@ import figma from './assets/figma.svg'
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  flexDirection: 'column'
+  flexDirection: 'row'
 }}>
   <img style={{ width: '30%' }} src={sketch} />
+  <Appear>
+    <div>
+      <span style='font-size: 2em'>y?</span>
+    </div>
+  </Appear>
 </div>
 
----
-
-### Sketchy Future?
 <Notes>
   Sketch used to be the new kid on the block! Many designers around me were hesitant to switch over
 
@@ -74,7 +82,13 @@ import figma from './assets/figma.svg'
 
 ---
 
-### Possible Approaches
+<Invert>
+  <img style={{ width: '80%' }} src={challenger} />
+</Invert>
+
+<Notes>
+  Possible paths forward
+</Notes>
 
 ---
 
